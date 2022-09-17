@@ -1,5 +1,8 @@
+import { listenSubmit, loadTodoList } from './handlers';
+
 function initialize() {
-  document.getElementById('app').innerHTML = 'Hello Parcel!'
+  loadTodoList();
+  listenSubmit();
 }
 
 initialize();
